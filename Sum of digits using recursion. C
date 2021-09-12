@@ -1,0 +1,32 @@
+#include<stdio.h>
+
+#include<conio.h>
+
+int sum(int);
+
+main()
+
+{
+
+	int x;	
+  printf("\n ENTER THE NUMBERS:");
+
+	scanf("%d",&x);
+
+	printf("\n THE SUM IS:%d",sum(x));
+
+	getch();
+
+}
+
+int sum(int x)
+
+{
+
+	if(x/10==0)
+
+	return(x);
+
+	return(x%10+sum(x/10));
+
+}
